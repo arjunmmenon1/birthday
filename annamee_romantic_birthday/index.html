@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff1e8" />
+  <title>For Annamee ♡ A Birthday Made of Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="For Annamee">a little <span>♡</span> forever</a>
+    <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false"><span class="music-icon">♫</span><span id="musicLabel">Play our soundtrack</span></button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> MADE WITH ALL MY HEART <span class="eyebrow-line"></span></p>
+        <h1>Happy Birthday,<br><em>Annamee</em><span class="hero-heart">♡</span></h1>
+        <p class="hero-text">For the girl who makes ordinary moments feel like magic — this little world is just for you.</p>
+        <a class="primary-button" href="#surprise">Let the magic begin <span>↘</span></a>
+        <p class="tiny-note">A tiny website. A whole lot of love.</p>
+      </div>
+      <div class="hero-art reveal">
+        <div class="sun-glow"></div>
+        <div class="floating-heart heart-a">♡</div><div class="floating-heart heart-b">✦</div><div class="floating-heart heart-c">♡</div>
+        <div class="balloon balloon-peach"><span></span></div>
+        <div class="balloon balloon-rose"><span></span></div>
+        <div class="balloon balloon-cream"><span></span></div>
+        <div class="gift-wrap">
+          <div class="gift-lid"><div class="bow"></div></div>
+          <div class="gift-box"><div class="gift-ribbon"></div><div class="gift-heart">♡</div></div>
+          <div class="gift-shadow"></div>
+        </div>
+        <div class="art-caption"><span>♡</span> sealed with love <span>♡</span></div>
+      </div>
+      <div class="scroll-cue">SCROLL FOR YOUR SURPRISE <span>↓</span></div>
+    </section>
+
+    <section class="countdown-section section" id="countdown">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A DAY WORTH COUNTING DOWN TO</p>
+        <h2>Every second is <em>special</em></h2>
+        <p>Counting down to your next trip around the sun.</p>
+      </div>
+      <div class="countdown-card reveal">
+        <div class="countdown-top"><span class="mini-star">✦</span><span id="countdownCaption">Until your special day</span><span class="mini-star">✦</span></div>
+        <div class="countdown-grid">
+          <div class="time-unit"><strong id="days">00</strong><span>days</span></div>
+          <i>:</i>
+          <div class="time-unit"><strong id="hours">00</strong><span>hours</span></div>
+          <i>:</i>
+          <div class="time-unit"><strong id="minutes">00</strong><span>minutes</span></div>
+          <i>:</i>
+          <div class="time-unit"><strong id="seconds">00</strong><span>seconds</span></div>
+        </div>
+        <label class="date-edit">Set Annamee’s birthday <input id="birthdayDate" type="date" aria-label="Birthday date"></label>
+        <p class="countdown-foot">No matter what the clock says, you deserve to feel celebrated every day. ♡</p>
+      </div>
+    </section>
+
+    <section class="memories-section section" id="memories">
+      <div class="section-heading reveal">
+        <p class="eyebrow">LITTLE MOMENTS, BIG FEELINGS</p>
+        <h2>Our favourite <em>memories</em></h2>
+        <p>Add your own photos and turn this page into your tiny memory museum.</p>
+      </div>
+      <div class="memory-tools reveal">
+        <label class="upload-button" for="photoUpload">＋ Add your photos</label>
+        <input id="photoUpload" type="file" accept="image/*" multiple hidden>
+        <span>Choose up to 6 photos · they stay in this browser session</span>
+      </div>
+      <div class="photo-grid" id="photoGrid">
+        <div class="photo-card photo-one placeholder"><div class="photo-inner"><span>♡</span><p>your favourite<br>little moment</p></div><small>the beginning of us</small></div>
+        <div class="photo-card photo-two placeholder"><div class="photo-inner"><span>✦</span><p>the laughs<br>we keep</p></div><small>my happy place</small></div>
+        <div class="photo-card photo-three placeholder"><div class="photo-inner"><span>♡</span><p>the days I’d<br>live twice</p></div><small>you + me</small></div>
+      </div>
+    </section>
+
+    <section class="cake-section section" id="surprise">
+      <div class="section-heading reveal">
+        <p class="eyebrow">MAKE A WISH, MY LOVE</p>
+        <h2>A cake just for <em>you</em></h2>
+        <p>Tap the candles to blow them out, then cut your birthday cake.</p>
+      </div>
+      <div class="cake-stage reveal">
+        <div class="cake-sparkle sparkle-one">✦</div><div class="cake-sparkle sparkle-two">♡</div>
+        <div class="cake" id="cake" aria-label="Interactive birthday cake">
+          <div class="candle-row">
+            <button class="candle lit" data-candle="0" aria-label="Blow out candle 1"><span class="flame"></span><span class="wick"></span></button>
+            <button class="candle lit" data-candle="1" aria-label="Blow out candle 2"><span class="flame"></span><span class="wick"></span></button>
+            <button class="candle lit" data-candle="2" aria-label="Blow out candle 3"><span class="flame"></span><span class="wick"></span></button>
+            <button class="candle lit" data-candle="3" aria-label="Blow out candle 4"><span class="flame"></span><span class="wick"></span></button>
+            <button class="candle lit" data-candle="4" aria-label="Blow out candle 5"><span class="flame"></span><span class="wick"></span></button>
+          </div>
+          <div class="cake-top"><span class="icing-drip drip-one"></span><span class="icing-drip drip-two"></span><span class="icing-drip drip-three"></span><span class="cake-berry berry-one">♥</span><span class="cake-berry berry-two">♥</span></div>
+          <div class="cake-layer layer-top"></div><div class="cake-layer layer-bottom"></div><div class="cake-plate"></div>
+          <div class="cake-cut" id="cakeCut"></div>
+        </div>
+        <p class="cake-instruction" id="cakeInstruction">Five little flames, five wishes just for you.</p>
+        <div class="cake-actions"><button class="secondary-button" id="blowAll">Blow out all candles ✧</button><button class="primary-button" id="cutCake">Cut the cake ♡</button></div>
+        <p class="cake-message" id="cakeMessage" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="letter-section section" id="letter">
+      <div class="letter-layout">
+        <div class="letter-intro reveal"><p class="eyebrow">OPEN WHEN YOU NEED A HUG</p><h2>A letter for<br><em>my favourite person</em></h2><p>Some feelings are too big for a text message. So I put a few of them here, just for you.</p><button class="primary-button" id="openLetter">Open your letter <span>♡</span></button></div>
+        <div class="letter-wrap reveal" id="letterWrap">
+          <div class="letter-envelope"><div class="envelope-flap"></div><div class="envelope-seal">♡</div><div class="letter-paper" id="letterPaper"><p class="letter-date">FOR ANNAM﻿EE, WITH LOVE</p><h3>My dearest Annamee,</h3><p>Happy birthday, my love. If I could give you one thing today, it would be the ability to see yourself through my eyes — then you would understand how special you are to me.</p><p>Thank you for your smile, your kindness, your little ways of making life brighter, and for being exactly who you are. I hope this new year brings you soft mornings, brave dreams, unexpected joy, and a thousand reasons to laugh.</p><p>Whatever this year brings, I hope you always remember that you are loved more than these words can hold. Today is your day, but loving you is my everyday.</p><p class="letter-signoff">Forever cheering for you,<br><em>your person ♡</em></p><div class="letter-stamp">WITH<br>LOVE</div></div></div>
+          <p class="letter-hint" id="letterHint">Tap the button to unfold your letter.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-section section">
+      <div class="final-stars">✦　♡　✧　♡　✦</div>
+      <p class="eyebrow">ONE LAST THING</p>
+      <h2>Today, tomorrow,<br><em>and all the little days.</em></h2>
+      <p>May life be as gentle with you as your heart is with everyone around you.</p>
+      <button class="final-button" id="celebrateButton">Send a little more magic <span>✦</span></button>
+      <p class="final-signature">made for Annamee, with love ♡</p>
+    </section>
+  </main>
+
+  <footer><span>made with ♡</span><span>for Annamee · always</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+  <audio id="birthdayAudio" loop preload="none">
+    <!-- Optional: add your own royalty-free music file as music.mp3 in this folder. -->
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
